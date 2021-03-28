@@ -8,8 +8,40 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6904644-7b52-4fe0-abd6-e5fe3d4db87b" name="Default Changelist" comment="" />
+    <list default="true" id="c6904644-7b52-4fe0-abd6-e5fe3d4db87b" name="Default Changelist" comment="update bottom nav">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/musicapp/AccountFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/musicapp/SearchFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Music_App.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Music_App.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/musicapp/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/musicapp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_navigation.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,24 +50,37 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[9WV7N18924000739]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="resourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="database_implementation" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,10 +97,13 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android-custom-viewC:/Users/Andreea/AppData/Local/Android/Sdk/sources/android-30/android/widget/AdapterView.java_SELECTED" value="AdapterView" />
+    <property name="multi-representation-previewC:/Users/Andreea/AppData/Local/Android/Sdk/sources/android-30/android/widget/AdapterView.java_selected" value="Custom views" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.210784711">
@@ -182,8 +230,47 @@
       <option name="project" value="LOCAL" />
       <updated>1616937698981</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="unconversioned files">
+      <created>1616938759770</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616938759770</updated>
+    </task>
+    <task id="LOCAL-00007" summary="unconversioned files">
+      <created>1616938766030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616938766030</updated>
+    </task>
+    <task id="LOCAL-00008" summary="default changes">
+      <created>1616939389240</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616939389240</updated>
+    </task>
+    <task id="LOCAL-00009" summary="bottom navigation bar first draft">
+      <created>1616941950061</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1616941950061</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit test" />
@@ -191,7 +278,11 @@
     <MESSAGE value="sign up and login pages" />
     <MESSAGE value="scroll activity" />
     <MESSAGE value="Database implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Database implementation" />
+    <MESSAGE value="unconversioned files" />
+    <MESSAGE value="default changes" />
+    <MESSAGE value="bottom navigation bar first draft" />
+    <MESSAGE value="update bottom nav" />
+    <option name="LAST_COMMIT_MESSAGE" value="update bottom nav" />
   </component>
   <component name="WindowStateProjectService">
     <state x="286" y="158" key="#PSD" timestamp="1616885373676">
@@ -206,57 +297,74 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616928190937" />
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1616943708952">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616943708952" />
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1616938398969">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616938398969" />
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1616938422447">
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1616942200916">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616938422447" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616942200916" />
     <state x="614" y="220" key="AndroidCreateXmlResourceDialog" timestamp="1616886924676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="614" y="220" key="AndroidCreateXmlResourceDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616886924676" />
-    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1616937697816">
+    <state x="395" y="0" key="CommitChangelistDialog2" timestamp="1616967054056">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616937697816" />
-    <state width="583" height="295" key="Git.Branch.Popup" timestamp="1616937737240">
+    <state x="395" y="0" key="CommitChangelistDialog2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616967054056" />
+    <state width="591" height="303" key="Git.Branch.Popup" timestamp="1616966896800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="583" height="295" key="Git.Branch.Popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616937737240" />
-    <state width="1491" height="142" key="GridCell.Tab.0.bottom" timestamp="1616888639771">
+    <state width="591" height="303" key="Git.Branch.Popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966896800" />
+    <state width="1491" height="244" key="GridCell.Tab.0.bottom" timestamp="1616966357276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="142" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616888639771" />
-    <state width="1491" height="142" key="GridCell.Tab.0.center" timestamp="1616888639771">
+    <state width="1491" height="244" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966357276" />
+    <state width="1491" height="244" key="GridCell.Tab.0.center" timestamp="1616966357276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="142" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616888639771" />
-    <state width="1491" height="142" key="GridCell.Tab.0.left" timestamp="1616888639770">
+    <state width="1491" height="244" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966357276" />
+    <state width="1491" height="244" key="GridCell.Tab.0.left" timestamp="1616966357276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="142" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616888639770" />
-    <state width="1491" height="142" key="GridCell.Tab.0.right" timestamp="1616888639771">
+    <state width="1491" height="244" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966357276" />
+    <state width="1491" height="244" key="GridCell.Tab.0.right" timestamp="1616966357276">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="142" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616888639771" />
-    <state x="527" y="115" key="RollbackChangesDialog" timestamp="1616893007211">
+    <state width="1491" height="244" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966357276" />
+    <state x="147" y="65" key="MergeDialog" timestamp="1616938840353">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="527" y="115" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616893007211" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1616883943121">
+    <state x="147" y="65" key="MergeDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616938840353" />
+    <state x="407" y="174" key="MultipleFileMergeDialog" timestamp="1616938903203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616883943121" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616884371093">
+    <state x="407" y="174" key="MultipleFileMergeDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616938903203" />
+    <state x="527" y="115" key="RollbackChangesDialog" timestamp="1616967014759">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616884371093" />
-    <state x="2587" y="253" width="585" height="534" key="find.popup" timestamp="1616936648846">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state x="527" y="115" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616967014759" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1616942023592">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616942023592" />
+    <state x="618" y="326" key="VCS.ChangelistChooser" timestamp="1616966953960">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="618" y="326" key="VCS.ChangelistChooser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966953960" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1616966898953">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616966898953" />
+    <state x="787" y="118" width="556" height="534" key="find.popup" timestamp="1616944892555">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="787" y="118" width="556" height="534" key="find.popup/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1616944892555" />
     <state x="2587" y="253" width="585" height="534" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1616936648846" />
     <state x="396" y="156" key="psd.add.library.dependency.panel.dimension" timestamp="1616885200590">
       <screen x="0" y="0" width="1536" height="824" />
