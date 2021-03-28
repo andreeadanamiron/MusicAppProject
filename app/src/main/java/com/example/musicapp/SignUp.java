@@ -1,20 +1,15 @@
 package com.example.musicapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class SignUp extends AppCompatActivity {
 
@@ -51,13 +46,17 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(getApplicationContext(), Login.class);
+                startActivity(intent);
+                finish();
+
                 String fullname, username, password, email;
                 fullname = String.valueOf(textInputEditTextFullname.getText());
                 username = String.valueOf(textInputEditTextUsername.getText());
                 password = String.valueOf(textInputEditTextPassword.getText());
                 email = String.valueOf(textInputEditTextEmail.getText());
 
-                if (!fullname.equals("") && !username.equals("") && !password.equals("") && !email.equals(""))
+                /*if (!fullname.equals("") && !username.equals("") && !password.equals("") && !email.equals(""))
                 {
                     progressBar.setVisibility(View.VISIBLE);
                     Handler handler = new Handler(Looper.getMainLooper());
@@ -75,8 +74,8 @@ public class SignUp extends AppCompatActivity {
                             data[1] = "username";
                             data[2] = "password";
                             data[3] = "email";
-                            PutData putData = new PutData("https:// 192.168.1.108/LoginRegister/signup.php", "POST", field, data);
-                            if (putData.startPut()) {
+                            //PutData putData = new PutData("https:// 192.168.1.108/LoginRegister/signup.php", "POST", field, data);
+                            /*if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
                                     if(result.equals("Sign Up Success"))
@@ -99,7 +98,7 @@ public class SignUp extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(getApplicationContext(), "All fields are required", Toast.LENGTH_SHORT).show();
-                }
+                }*/
             }
         });
     }

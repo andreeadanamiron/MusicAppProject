@@ -1,7 +1,5 @@
 package com.example.musicapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,8 +10,9 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.textfield.TextInputEditText;
-import com.vishnusivadas.advanced_httpurlconnection.PutData;
 
 public class Login extends AppCompatActivity {
 
@@ -66,8 +65,12 @@ public class Login extends AppCompatActivity {
                             String[] data = new String[2];
                             data[0] = "username";
                             data[1] = "password";
-                            PutData putData = new PutData("https:// 192.168.1.108/LoginRegister/login.php", "POST", field, data);
-                            if (putData.startPut()) {
+
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            startActivity(intent);
+                            finish();
+                            //PutData putData = new PutData("https:// 192.168.1.108/LoginRegister/login.php", "POST", field, data);
+                            /*if (putData.startPut()) {
                                 if (putData.onComplete()) {
                                     String result = putData.getResult();
                                     if(result.equals("Login Success"))
@@ -83,7 +86,7 @@ public class Login extends AppCompatActivity {
                                         Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
                                     }
                                 }
-                            }
+                            }*/
                         }
                     });
                 }
