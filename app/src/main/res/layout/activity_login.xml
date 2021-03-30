@@ -5,16 +5,20 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/login_signup_background">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:fontFamily="@font/poppinsbold"
+        android:fontFamily="italic"
         android:gravity="center"
-        android:text="@string/login"
+        android:text="Login"
         android:textColor="@color/colorAccent"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,7 +32,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.426"
+        app:layout_constraintVertical_bias="0.595"
         tools:layout_editor_absoluteX="0dp">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -37,7 +41,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:hint="@string/username"
+            android:hint="Username:"
+            android:textColorHint="@color/black"
+            app:hintTextColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -49,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_user"
                 android:drawableRight="@drawable/username_right"
-                android:fontFamily="@font/poppinsmedium"
+                android:fontFamily="italic"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -59,7 +65,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:hint="@string/password"
+            android:hint="Password:"
+            android:textColorHint="@color/black"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUsername"
             tools:layout_editor_absoluteX="0dp">
 
@@ -69,7 +76,7 @@
                 android:layout_height="wrap_content"
                 android:drawableEnd="@drawable/ic_password"
                 android:drawableRight="@drawable/ic_password"
-                android:fontFamily="@font/poppinsmedium"
+                android:fontFamily="italic"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -88,7 +95,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="76dp"
-            android:text="@string/login"
+            android:text="Login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.511"
             app:layout_constraintStart_toStartOf="parent"
@@ -99,12 +106,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:fontFamily="@font/poppinsmedium"
-            android:text="@string/signuphere"
+            android:fontFamily="italic"
+            android:text="Don't have an account? \n
+         SignUpHere"
+            android:textColor="@color/black"
+            android:textSize="15dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/buttonLogin"
             tools:targetApi="jelly_bean" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
