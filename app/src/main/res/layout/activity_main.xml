@@ -15,6 +15,27 @@
         android:dividerHeight="10.0sp"
         android:padding="8dp"/>
 
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="520dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="300dp"
+        android:background="@drawable/roundbtn"
+        android:src="@drawable/icon_exit"
+        android:id="@+id/exitBtn"/>
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="575dp"
+        android:layout_marginStart="290dp"
+        android:layout_marginLeft="1000dp"
+        android:background="@drawable/roundbtn"
+        android:src="@drawable/ic_sm"
+        android:id="@+id/sendMessageBtn"/>
+
+
 
 
 </RelativeLayout>

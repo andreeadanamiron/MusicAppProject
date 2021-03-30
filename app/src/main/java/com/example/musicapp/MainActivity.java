@@ -1,10 +1,12 @@
 package com.example.musicapp;
 
 import android.Manifest;
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Environment;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -12,11 +14,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.karumi.dexter.Dexter;
 import com.karumi.dexter.MultiplePermissionsReport;
 import com.karumi.dexter.PermissionToken;
@@ -31,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView;
     String[] items;
+    //ImageButton btnExit = findViewById(R.id.close);
+    //ImageButton btnSendMessage = findViewById(R.id.sendMessageBtn);
+
+    //RelativeLayout sendMessage = findViewById(R.id.sendMessage);
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -38,32 +41,38 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
-        bottomNav.setOnNavigationItemSelectedListener(navListener);
 
         listView = findViewById(R.id.listViewSong);
         runtimePermission();
+
+        /*btnExit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+                finish();
+                Toast.makeText(MainActivity.this, "Succesdully Logout", Toast.LENGTH_SHORT).show();
+            }
+        });*/
+
     }
 
-    private final BottomNavigationView.OnNavigationItemSelectedListener navListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            Fragment selectedFragment = null;
 
-            switch (item.getItemId()) {
-                case R.id.nav_search:
-                    selectedFragment = new SearchFragment();
-                    break;
-                case R.id.nav_account:
-                    selectedFragment = new AccountFragment();
-                    break;
+    /*public void onClickSendMessage()
+    {
+        btnSendMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                redirectActivity(this, MessageSender.class);
             }
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.listViewSong, selectedFragment).commit();
-
-            return true;
-        }
-    };
+            public void redirectActivity(View.OnClickListener activity, Class aClass) {
+                Intent intent = new Intent(MainActivity.this, MessageSender.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                finish();
+            }
+        });
+    }*/
 
     public void runtimePermission()
     {
@@ -158,6 +167,38 @@ public class MainActivity extends AppCompatActivity {
             textsong.setText(items[position]);
             return myView;
         }
+    }
+
+    public static void logout(Activity activity)
+    {
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        builder.setTitle("Logout");
+        builder.setMessage("Are you sure you want to logout?");
+
+        builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                activity.finishAffinity();
+                System.exit(0);
+                //CHANGE TO GO TO LOGIN SCREEN
+            }
+        });
+
+        builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+
+        builder.show();
+
+    }
+
+    public void  ClickLogout(View view)
+    {
+        logout(this);
     }
 
 }
